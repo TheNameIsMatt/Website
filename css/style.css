@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+/* Variables for re-use*/
+:root {
+    --textcolour: #fff;
+    --secondarytext: #000;
+}
+/* Asterisk means it applies to everything */ 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Supermercado One', sans-serif;
+    color: var(--secondarytext);
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondarytext);
+}
+
+h1,h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+img {
+    /*Will keep it within its container and utilise 100% of the space it has */
+    width: 100%;
+}
+
+.navbar {
+     background-color: blue;
+     color: var(--textcolour);
+     height: 70px;
+     
+}
+.navbar ul {
+    display: flex;
+}
+
+
+.navbar a {
+    color: var(--textcolour);
+    padding: 10px;
+    margin: 0 5px;
+}
+
+/* This uses the hover feature built into CSS and HTML and adds a little bar which appears when the cursor hovers over the links */
+.navbar a:hover {
+    border-bottom: 2px var(--textcolour) solid;
+}
+
+/*If navbar and flex are in the same class then this css is utilised */
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* This overflow removes the padding added by h1,h2 */
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
