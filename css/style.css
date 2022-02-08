@@ -4,6 +4,7 @@
 :root {
     --textcolour: #fff;
     --secondarytext: #000;
+    --WebsiteThemeColour: blue;
 }
 /* Asterisk means it applies to everything */ 
 * {
@@ -42,8 +43,9 @@ img {
     width: 100%;
 }
 
+/* Navbar styling */
 .navbar {
-     background-color: blue;
+     background-color: var(--WebsiteThemeColour);
      color: var(--textcolour);
      height: 70px;
      
@@ -69,7 +71,23 @@ img {
 .navbar .flex {
     justify-content: space-between;
 }
+/* Showcase */
+.showcase {
+    height: 400px;
+    background-color: var(--WebsiteThemeColour);
+    position: relative;
+    color: var(--textcolour);
+}
 
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p{
+    margin: 20px 0;
+}
+
+/* Utilities - Classes to be used all round webste */
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -83,4 +101,10 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+}
+
+.grid {
+    display: grid;
+    /* fr is fractions, the first column would take up 2fr of the entire space, the second one would take 1fr */
+    grid-template-columns: 2fr 1fr;
 }
