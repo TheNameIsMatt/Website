@@ -87,6 +87,41 @@ img {
     margin: 20px 0;
 }
 
+.showcase .grid{
+    /* Allows it to overflow out of the element it is contained in */
+    overflow: visible;
+    grid-template-columns: 55% 45%;
+    gap: 30px;
+}
+
+.showcase-form {
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width: 400px;
+    padding: 40px;
+    /* Z-index is basically a sorting system of what should be on top and visible of others. */
+    z-index: 100;
+    justify-self: flex-end;
+}
+
+.showcase-form .form-control {
+    margin: 30px 0;
+}
+
+.showcase-form input[Type='text'],
+.showcase-form input[Type='email'] {
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+
+.showcase-form input:focus{
+    outline:none;
+}
+
 /* Utilities - Classes to be used all round webste */
 .container {
     max-width: 1100px;
@@ -94,6 +129,16 @@ img {
     /* This overflow removes the padding added by h1,h2 */
     overflow: auto;
     padding: 0 40px;
+}
+
+.card {
+    background-color: var(--textcolour);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    margin: 20px;
+    
 }
 
 .flex{
@@ -106,5 +151,10 @@ img {
 .grid {
     display: grid;
     /* fr is fractions, the first column would take up 2fr of the entire space, the second one would take 1fr */
-    grid-template-columns: 2fr 1fr;
+    /* The repeat will add 1fr twice, denoted by the 2 at the start */
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
