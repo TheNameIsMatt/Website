@@ -5,6 +5,9 @@
     --textcolour: #fff;
     --secondarytext: #000;
     --WebsiteThemeColour: blue;
+    --secondary-colour: #1c3fa8;
+    --dark-colour: #002240;
+    --light-colour: #f4f4f4;
 }
 /* Asterisk means it applies to everything */ 
 * {
@@ -190,4 +193,37 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     /* Starts at first column and spans over to the second column */
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+}
+
+/* Cloud */
+
+.cloud {
+    background-color: var(--WebsiteThemeColour);
+}
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+/* Languages */
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px 40px;
+
+    /* This transition uses the transform that is declared lower down in the pseudo class of hover*/
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.languages .card:hover {
+    transform: translateY(-15px);
 }

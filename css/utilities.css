@@ -39,6 +39,54 @@
     transform: scale(0.90);
 }
 
+/* Backgrounds & Buttons */
+
+.bg-primary,
+.btn-primary {
+    background: var(--WebsiteThemeColour);
+    color: var(--textcolour);
+}
+
+
+.bg-secondary,
+.btn-secondary {
+    background: var(--secondary-colour);
+    color: var(--textcolour);
+}
+
+
+.bg-dark,
+.btn-dark {
+    background: var(--dark-colour);
+    color: var(--textcolour);
+}
+
+.bg-light,
+.btn-light {
+    background: var(--light-colour);
+    color: var(--textcolour);
+}
+
+/* Text Sizes */
+.lead{
+    font-size: 20px;
+}
+
+.sm{
+    font-size: 1rem;
+}
+
+.md{
+    font-size: 2rem;
+}
+
+.lg{
+    font-size: 3rem;
+}
+
+.xl{
+    font-size: 4rem;
+}
 
 .text-center {
     text-align: center;
