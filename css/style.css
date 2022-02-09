@@ -4,7 +4,7 @@
 :root {
     --textcolour: #fff;
     --secondarytext: #000;
-    --WebsiteThemeColour: blue;
+    --WebsiteThemeColour: #7817ff;
     --secondary-colour: #1c3fa8;
     --dark-colour: #002240;
     --light-colour: #f4f4f4;
@@ -226,4 +226,10 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 
 .languages .card:hover {
     transform: translateY(-15px);
+}
+
+/* Footer */
+
+.footer .social a {
+    margin: 0 10px;
 }
