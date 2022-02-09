@@ -122,39 +122,72 @@ img {
     outline:none;
 }
 
-/* Utilities - Classes to be used all round webste */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    /* This overflow removes the padding added by h1,h2 */
-    overflow: auto;
-    padding: 0 40px;
+/* This is a pseudo selector */
+.showcase::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom: -70px;
+    right: 0;
+    left: 0;
+    background:#fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3eg);
+    -moz-transform: skewY(-3eg);
+    -ms-transform: skewY(-3deg);
 }
 
-.card {
-    background-color: var(--textcolour);
-    color: #333;
-    border-radius: 10px;
+/* Position absolute means that it is positioned relative to the nearest positioned ancestor instead of doing it based on the viewport */
+
+.showcase::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    bottom: -70;
+    right: 0;
+    left: 0;
+    background:#fff;
+
+}
+
+/*  
+You can add effects to pseudo selectors but the event needs to occur before the selector (hover is before the after)
+.showcase:hover:after{
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
-    padding: 20px;
-    margin: 20px;
-    
+}
+*/
+
+/* Stats */
+
+.stats{
+    padding-top: 100px;
 }
 
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
+.stats-heading {
+    max-width: 500px;
+    margin: auto;
 }
 
-.grid {
-    display: grid;
-    /* fr is fractions, the first column would take up 2fr of the entire space, the second one would take 1fr */
-    /* The repeat will add 1fr twice, denoted by the 2 at the start */
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+.stats .grid h3{
+    font-size: 35px;
+}
+
+.stats .grid p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* CLI */
+
+.cli .grid {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+/* Takes anything that is the first child in the CLI section, the first child under the grid, is the <img> tag  */
+/* The asterisk can be replaced with whatever element you want e.g. img */
+.cli .grid > *:first-child {
+    /* Starts at first column and spans over to the second column */
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
 }
