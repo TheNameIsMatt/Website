@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 
 /* Variables for re-use*/
 :root {
     --textcolour: #fff;
     --secondarytext: #000;
-    --WebsiteThemeColour: #7817ff;
-    --secondary-colour: #1c3fa8;
-    --dark-colour: #002240;
+    --WebsiteThemeColour: #24E5D2;
+    --secondary-colour: #78C091;
+    --dark-colour: #094943;
     --light-colour: #f4f4f4;
+    --Accent-colour: #A26967;
 }
 /* Asterisk means it applies to everything */ 
 * {
@@ -17,9 +19,10 @@
 }
 
 body {
-    font-family: 'Supermercado One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--secondarytext);
     line-height: 1.6;
+
 }
 
 ul {
@@ -232,4 +235,22 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 
 .footer .social a {
     margin: 0 10px;
+    float: right;
+    justify-content: right;
+}
+
+.footer li {
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    border-left: var(--Accent-colour) 10px solid;
+    border-right: var(--Accent-colour) 10px solid;
+
+}
+
+.footer .grid-3 {
+
+    border-left: var(--Accent-colour) 10px solid;
+    border-right: var(--Accent-colour) 10px solid;
+    
 }
