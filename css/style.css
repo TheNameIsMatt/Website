@@ -279,6 +279,10 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 
 .docs-main h3 {
     margin: 20px;
+}
+
+.docs-main .card.leftcolumn h3 {
+    margin: 20px;
     text-align: center;
 }
 
@@ -295,6 +299,8 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     border-bottom: 2px #fff dotted;
     text-align-last: center;
 }
+
+
 
 
 
