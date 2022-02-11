@@ -1,7 +1,13 @@
 /* You can select a word and then press ctrl + d a few times to select all the same words below it, and this will allow you to change all instances at the same time */
 
+/* Border radius is what gives the curved edges  */
 
 /* Utilities - Classes to be used all round webste */
+.bordertopbottom {
+    border-top: 5px #fff solid;
+    border-bottom: 5px #fff solid;
+}
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -17,6 +23,15 @@
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     padding: 20px;
     margin: 20px;   
+}
+
+code {
+    background-color: #000;
+    color: greenyellow;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    padding: 10px;
+    margin: 10px;   
 }
 
 .btn {

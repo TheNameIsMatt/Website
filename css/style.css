@@ -77,6 +77,17 @@ img {
 .navbar .flex {
     justify-content: space-between;
 }
+
+.navbar::after{
+    content: '';
+    position: absolute;
+    height: 20px;
+    right: 0;
+    left: 0;
+    background:#fff;
+}
+
+
 /* Showcase */
 .showcase {
     height: 400px;
@@ -143,8 +154,6 @@ img {
     -ms-transform: skewY(-3deg);
 }
 
-/* Position absolute means that it is positioned relative to the nearest positioned ancestor instead of doing it based on the viewport */
-
 .showcase::before{
     content: '';
     position: absolute;
@@ -153,14 +162,19 @@ img {
     right: 0;
     left: 0;
     background:#fff;
-
 }
+
+/* Position absolute means that it is positioned relative to the nearest positioned ancestor instead of doing it based on the viewport */
+
+
 
 /*  
 You can add effects to pseudo selectors but the event needs to occur before the selector (hover is before the after)
+
 .showcase:hover:after{
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
+
 */
 
 /* Stats */
@@ -231,6 +245,40 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     transform: translateY(-15px);
 }
 
+/* Features */
+.features-head img, .docs-head img {
+    width: 200px;
+    /* Justify self is referring to this specific item, so the image will move over */
+    justify-self: flex-end;
+}
+
+.features-sub-head img {
+    width: 300px;
+    justify-self: flex-end;
+}
+
+.features-main .card > i{
+    margin-right: 0 20px;
+}
+
+.features-main .grid {
+    padding: 30px;
+}
+
+.features-main .grid > *:first-child {
+    /* Starts at first column and spans over to the second column */
+    grid-column: 1 / span 3;
+}
+
+.features-main .grid > *:nth-child(2) {
+    /* Starts at first column and spans over to the second column */
+    grid-column: 1 / span 2;
+}
+
+/* Docs */
+
+
+
 /* Footer */
 
 .footer .social a {
@@ -253,4 +301,54 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     border-left: var(--Accent-colour) 10px solid;
     border-right: var(--Accent-colour) 10px solid;
     
+}
+
+/* Tablets and Under */
+/* Anything under the max width will be styled here */
+@media(max-width: 768px) {
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .showcase {
+        height: auto;
+    }
+
+    .showcase-text {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .showcase-form {
+        justify-self: center;
+        margin: auto;
+    }
+
+    .cli .grid > *:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+
+
+/* Mobile */
+@media(max-width: 500px) {
+    
+    .navbar{
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }
