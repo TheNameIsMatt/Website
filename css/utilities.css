@@ -3,6 +3,9 @@
 /* Border radius is what gives the curved edges  */
 
 /* Utilities - Classes to be used all round webste */
+.spacemaker {
+    padding: 20px;
+}
 .bordertopbottom {
     border-top: 5px #fff solid;
     border-bottom: 5px #fff solid;

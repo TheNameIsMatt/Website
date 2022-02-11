@@ -277,6 +277,25 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 
 /* Docs */
 
+.docs-main h3 {
+    margin: 20px;
+    text-align: center;
+}
+
+.docs-main .grid {
+    grid-template-columns: 1fr 2fr;
+    /* This will adjust the row so they both alight at the top */
+    align-items: flex-start;
+}
+
+.docs-main nav li {
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px #fff dotted;
+    text-align-last: center;
+}
+
 
 
 /* Footer */
