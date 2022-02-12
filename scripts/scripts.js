@@ -15,8 +15,13 @@ function nextImage(element)
   if(currentslide !== imgArray.length){
       document.getElementById(element.id).src = imgArray[currentslide].src;
       currentslide++;
+
+      if(currentslide >= imgArray.length)
+      {
+        currentslide = 0;
+      }
   }
-  if(currentslide >= imgArray.length){
-      currentslide = 0;
-  }
+  
+
+
 }
