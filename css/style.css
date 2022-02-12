@@ -10,6 +10,8 @@
     --dark-colour: #094943;
     --light-colour: #f4f4f4;
     --Accent-colour: #A26967;
+    --success-colour: #5cb85c;
+    --error-colour: #d9534f;
 }
 /* Asterisk means it applies to everything */ 
 * {
@@ -111,6 +113,10 @@ img {
     gap: 30px;
 }
 
+.showcase-text {
+    animation: slideInFromLeft 1s ease;
+}
+
 .showcase-form {
     position: relative;
     top: 60px;
@@ -120,6 +126,7 @@ img {
     /* Z-index is basically a sorting system of what should be on top and visible of others. */
     z-index: 100;
     justify-self: flex-end;
+    animation: slideInFromRight 1s ease;
 }
 
 .showcase-form .form-control {
@@ -181,6 +188,7 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 
 .stats{
     padding-top: 100px;
+    animation: slideInFromBottom 1s ease;
 }
 
 .stats-heading {
@@ -200,6 +208,8 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 /* CLI */
 
 .cli .grid {
+    
+    animation: slideInFromBottom 1s ease;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
 }
@@ -328,6 +338,52 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     
 }
 
+/* Animations */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        /* 0 would be its normal position */
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        /* 0 would be its normal position */
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        /* 0 would be its normal position */
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        /* 0 would be its normal position */
+        transform: translateX(0);
+    }
+}
+
+
+
 /* Tablets and Under */
 /* Anything under the max width will be styled here */
 @media(max-width: 768px) {
@@ -335,7 +391,9 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     .showcase .grid,
     .stats .grid,
     .cli .grid,
-    .cloud .grid {
+    .cloud .grid,
+    .features-main .grid,
+    .docs-main .grid {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
     }
@@ -357,6 +415,23 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     .cli .grid > *:first-child {
         grid-column: 1;
         grid-row: 1;
+    }
+
+    .features-head,
+    .features-sub-head,
+    .docs-head {
+        text-align:center;
+    }
+
+    .features-head img,
+    .features-sub-head img,
+    .docs-head img {
+        justify-self: center;
+    }
+
+    .features-main .grid > *:first-child,
+    .features-main .grid > *:nth-child(2) {
+        grid-column: 1;
     }
 }
 

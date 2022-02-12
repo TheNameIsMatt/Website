@@ -28,7 +28,7 @@
     margin: 20px;   
 }
 
-code {
+code, pre {
     background-color: #000;
     color: greenyellow;
     border-radius: 10px;
@@ -120,6 +120,25 @@ code {
     text-align: center;
 }
 
+/* Alert */
+.alert{
+    background-color: var(--Accent-colour);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success{
+    background-color: var(--success-colour);
+}
+
+.alert-error{
+    background-color: var(--error-colour);
+}
 
 .flex{
     display: flex;
@@ -209,4 +228,8 @@ code {
 }
 .p-5 {
     padding: 4rem ;
+}
+
+.text-primary {
+    color: var(--dark-colour)
 }
