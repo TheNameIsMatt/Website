@@ -184,6 +184,36 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 
 */
 
+/* Image slideshows */
+
+.imageslideshows{
+    padding-top: 100px;
+}
+
+
+.imageslideshows img  {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    overflow:visible;
+}
+
+.imageslideshows .arrowleft {
+    float:left;
+    margin-bottom: 5px;
+}
+
+
+.imageslideshows .arrowright {
+    padding-top: 10px;
+    float:right;
+}
+
+.imageslideshows .arrowleft:hover,
+.imageslideshows .arrowright:hover {
+    cursor: pointer;
+}
+
+
+
 /* Stats */
 
 .stats{
@@ -208,7 +238,7 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 /* CLI */
 
 .cli .grid {
-    
+
     animation: slideInFromBottom 1s ease;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
@@ -452,3 +482,4 @@ You can add effects to pseudo selectors but the event needs to occur before the 
         background-color: rgba(0, 0, 0, 0.1);
     }
 }
+

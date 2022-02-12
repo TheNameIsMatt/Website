@@ -6,6 +6,11 @@
 .spacemaker {
     padding: 20px;
 }
+
+.divdebug {
+    padding:50px;
+    background-color: red;
+}
 .bordertopbottom {
     border-top: 5px #fff solid;
     border-bottom: 5px #fff solid;
