@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/comfydog.png">
 
     <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
     <title>Pukes' Place</title>
 </head>
 <body>
@@ -62,15 +65,21 @@
             </h3>
             <div>    
                 <div class="arrowleft">
-                    <i class="fa-solid fa-arrow-left fa-xl"></i>
-                    <i class="fa-solid fa-arrow-left fa-xl"></i>
-                    <i class="fa-solid fa-arrow-left fa-xl"></i>
+                    <button>
+                        <i class="fa-solid fa-arrow-left fa-xl"></i>
+                        <i class="fa-solid fa-arrow-left fa-xl"></i>
+                        <i class="fa-solid fa-arrow-left fa-xl"></i>
+                    </button>
                 </div>                
-                <img src="images/showcase/sconce.jfif" alt="">
+                <div class="imgwrapper">
+                    <img id="slideshow" src="images/showcase/sconce.jfif" alt="">
+                </div>
                 <div class="arrowright">
-                    <i class="fa-solid fa-arrow-right fa-xl"></i> 
-                    <i class="fa-solid fa-arrow-right fa-xl"></i> 
-                    <i class="fa-solid fa-arrow-right fa-xl"></i> 
+                    <button onclick="nextImage(document.getElementById('slideshow'))">
+                        <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        <i class="fa-solid fa-arrow-right fa-xl"></i>
+                        <i class="fa-solid fa-arrow-right fa-xl"></i> 
+                    </button> 
                 </div>
             
             </div>
@@ -192,4 +201,5 @@
         </div>
     </footer>
 </body>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
 </html>

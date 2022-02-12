@@ -190,27 +190,46 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     padding-top: 100px;
 }
 
+.imageslideshows .imgwrapper {
+    padding: 10px 0;
+}
 
 .imageslideshows img  {
     box-shadow: 0 10px 20px rgba(0,0,0,0.8);
     overflow:visible;
 }
 
+
+.imageslideshows button {
+    /* Remove all button styling */
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 .imageslideshows .arrowleft {
     float:left;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    border-color: var(--WebsiteThemeColour);
+    background-color: var(--WebsiteThemeColour);
+    border-radius: 10px;
+    padding: 5px;
+    
 }
-
 
 .imageslideshows .arrowright {
-    padding-top: 10px;
+    
     float:right;
+    border-color: var(--WebsiteThemeColour);
+    background-color: var(--WebsiteThemeColour);
+    border-radius: 10px;
+    padding: 5px;
 }
 
-.imageslideshows .arrowleft:hover,
-.imageslideshows .arrowright:hover {
-    cursor: pointer;
-}
 
 
 
