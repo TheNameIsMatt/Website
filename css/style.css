@@ -113,7 +113,8 @@ img {
     gap: 30px;
     display: flex;
     padding-top: 10px;
-    border: 10px #fff solid;
+    border-left: 30px #fff solid;
+    border-right: 30px #fff solid;
 }
 
 .showcase-text {
@@ -170,7 +171,7 @@ img {
 .showcase::before{
     content: '';
     position: absolute;
-    height: 20px;
+    height: 30px;
     bottom: -70;
     right: 0;
     left: 0;
