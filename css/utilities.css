@@ -238,3 +238,14 @@ code, pre {
 .text-primary {
     color: var(--dark-colour)
 }
+
+.videowrapper {
+    justify-items: center;
+    height:500px;
+    width: 1000px;
+    margin: 50px 0;
+    border: #fff 10px solid;
+    border-radius: 10px;
+    margin: auto;
+
+}

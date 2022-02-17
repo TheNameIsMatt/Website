@@ -99,7 +99,7 @@ img {
 }
 
 .showcase h1 {
-    font-size: 40px;
+    font-size: 80px;
 }
 
 .showcase p{
@@ -251,11 +251,14 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 .stats{
     padding-top: 100px;
     animation: slideInFromBottom 1s ease;
+
+    
 }
 
 .stats-heading {
     max-width: 500px;
     margin: auto;
+
 }
 
 .stats .grid h3{
@@ -267,22 +270,42 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     font-weight: bold;
 }
 
-/* CLI */
 
-.cli .grid {
 
-    animation: slideInFromBottom 1s ease;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+
+/* Project Showcase */
+
+.projectshowcase section {
+    justify-content: center;
+    justify-items: center;
+    
 }
 
-/* Takes anything that is the first child in the CLI section, the first child under the grid, is the <img> tag  */
-/* The asterisk can be replaced with whatever element you want e.g. img */
-.cli .grid > *:first-child {
-    /* Starts at first column and spans over to the second column */
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
+
+
+.projectshowcase .container {
+    justify-items: center;
+    background-color: var(--WebsiteThemeColour);
+    border-radius: 10px;
+    margin: 10px auto; 
+    padding-bottom: 20px;
 }
+
+
+
+.projectshowcase h1 {
+    color: #fff;
+    border-bottom: #fff 10px solid;
+    margin-bottom: 30px;
+}
+
+.projectshowcase p {
+    font-size: medium;
+    color: #fff;
+    text-align: center;
+}
+
+
 
 /* Cloud */
 
