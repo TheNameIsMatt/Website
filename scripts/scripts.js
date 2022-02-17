@@ -2,13 +2,13 @@ const imgArray = new Array();
 var currentslide = 0;
 
 imgArray[0] = new Image();
-imgArray[0].src = 'images/showcase/radio.jfif';
+imgArray[0].src = 'images/showcase/radio.gif';
 
 imgArray[1] = new Image();
-imgArray[1].src = 'images/comfydog.png';
+imgArray[1].src = 'images/showcase/sconce.gif';
 
 imgArray[2] = new Image();
-imgArray[2].src = 'images/showcase/sconce.jfif';
+imgArray[2].src = 'images/showcase/stonedoorway.gif';
 
 function nextImage(element)
 {

@@ -134,10 +134,16 @@ img {
     overflow: scroll;
 }
 
+.twitter-timeline {
+    width: 100%;
+    height: 100%;
+}
+
 .showcase .card{
     border: 10px var(--Accent-colour) solid;
     text-align: center;
     margin: 0;
+    overflow: auto;
 }
 
 .showcase-form input[Type='text'],
