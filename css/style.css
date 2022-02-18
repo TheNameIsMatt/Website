@@ -282,7 +282,6 @@ You can add effects to pseudo selectors but the event needs to occur before the 
 }
 
 
-
 .projectshowcase .container {
     justify-items: center;
     background-color: var(--WebsiteThemeColour);
@@ -305,6 +304,9 @@ You can add effects to pseudo selectors but the event needs to occur before the 
     text-align: center;
 }
 
+.projectshowcase .container:hover {
+    cursor: pointer;
+}
 
 
 /* Cloud */

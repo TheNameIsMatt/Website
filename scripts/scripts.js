@@ -22,6 +22,17 @@ function nextImage(element)
       }
   }
   
+}
 
-
+function displayVideo(elementid) 
+{
+  if(elementid.style.display === "") {
+    elementid.style.display = "none";
+  }
+  
+  if (elementid.style.display === "none") {
+    elementid.style.display = "block";
+  } else {
+    elementid.style.display = "none";
+  }
 }

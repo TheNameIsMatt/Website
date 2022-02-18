@@ -247,5 +247,7 @@ code, pre {
     border: #fff 10px solid;
     border-radius: 10px;
     margin: auto;
+    display: none;
 
 }
+
